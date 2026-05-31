@@ -12,6 +12,6 @@
     }
   ],
   "redirects": [
-    { "source": "/form", "destination": "FORM_URL_PLACEHOLDER", "permanent": false }
+    { "source": "/form", "destination": "https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html", "permanent": false }
   ]
 }

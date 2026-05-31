@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis Alpha Research - Manual Send Console v0.1</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b1020;color:#e8edf7;margin:0;padding:24px;}
+header{max-width:1100px;margin:0 auto 20px;}
+h1{margin:0 0 8px;font-size:28px;}
+.warning{background:#3b2504;border:1px solid #f59e0b;color:#fde68a;padding:12px;border-radius:12px;margin:12px 0;}
+.grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px;}
+.card{background:#121a33;border:1px solid #26345f;border-radius:16px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.25);}
+.meta{font-size:18px;margin-bottom:6px;}
+.pill{font-size:12px;background:#2563eb;color:white;border-radius:999px;padding:3px 8px;margin-left:8px;}
+.small{font-size:13px;color:#aab7d4;margin:3px 0;word-break:break-all;}
+a{color:#93c5fd;}
+textarea{width:100%;box-sizing:border-box;margin-top:10px;border-radius:12px;background:#0f172a;color:#e5e7eb;border:1px solid #334155;padding:12px;font-size:14px;line-height:1.55;}
+button,.button{display:inline-block;background:#22c55e;color:#04110a;border:0;border-radius:10px;padding:10px 14px;margin:8px 8px 0 0;text-decoration:none;font-weight:700;cursor:pointer;}
+button:nth-child(3){background:#fbbf24;}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+input{background:#0f172a;color:#e5e7eb;border:1px solid #334155;border-radius:10px;padding:10px;min-width:320px;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Jarvis Alpha Research - Manual Send Console v0.1</h1>
+  <p>認証なしで初回10件を手動送信するためのコンソール。URL取得後、下の置換欄でLP/Form URLを一括反映してから送信。</p>
+  <div class="warning">まだプレースホルダーが残っている場合は送信禁止: LP_URL_PLACEHOLDER / FORM_URL_PLACEHOLDER</div>
+  <div class="tools">
+    <input id="lp" placeholder="LP URL">
+    <input id="form" placeholder="Google Form URL">
+    <button onclick="replaceUrls()">全メッセージにURL反映</button>
+    <button onclick="copyProgress()">送信済みメモをコピー</button>
+  </div>
+</header>
+<main class="grid">
+
+    <section class="card" data-lead="1">
+      <div class="meta"><b>1. sayama_ocha note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/sayama_ocha/n/n8497a4ade982" target="_blank">https://note.com/sayama_ocha/n/n8497a4ade982</a></div>
+      <div class="small">Channel: https://note.com/sayama_ocha/message</div>
+      <div class="small">Expected: ¥50000 / Notes: 生成AI×EAで親和性高</div>
+      <textarea id="msg1" rows="14">sayama_ocha note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg1')">文面コピー</button>
+        <a class="button" href="https://note.com/sayama_ocha/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('1')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="2">
+      <div class="meta"><b>2. Yozan note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/yozan108/n/n0222f7bbf08a" target="_blank">https://note.com/yozan108/n/n0222f7bbf08a</a></div>
+      <div class="small">Channel: https://note.com/yozan108/message</div>
+      <div class="small">Expected: ¥50000 / Notes: Claude Code×MT5 EA</div>
+      <textarea id="msg2" rows="14">Yozan note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg2')">文面コピー</button>
+        <a class="button" href="https://note.com/yozan108/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('2')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="3">
+      <div class="meta"><b>3. nexus-fx</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://nexus-fx.jp/2025/11/10/free/" target="_blank">https://nexus-fx.jp/2025/11/10/free/</a></div>
+      <div class="small">Channel: https://nexus-fx.jp/reservations/ / nexustrading365@gmail.com / https://x.com/Maafx3</div>
+      <div class="small">Expected: ¥150000 / Notes: EA配布者向け提携</div>
+      <textarea id="msg3" rows="14">nexus-fx様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg3')">文面コピー</button>
+        <a class="button" href="https://nexus-fx.jp/reservations/" target="_blank">送信先を開く</a>
+        <button onclick="markDone('3')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="4">
+      <div class="meta"><b>4. チームforce FX note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/legit_thyme7751/n/n9e760de4b060" target="_blank">https://note.com/legit_thyme7751/n/n9e760de4b060</a></div>
+      <div class="small">Channel: https://note.com/legit_thyme7751/message</div>
+      <div class="small">Expected: ¥50000 / Notes: EA自作/無料EA</div>
+      <textarea id="msg4" rows="14">チームforce FX note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg4')">文面コピー</button>
+        <a class="button" href="https://note.com/legit_thyme7751/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('4')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="5">
+      <div class="meta"><b>5. FXアルゴ研究所</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/wise_mimosa4973/n/n3017ce5257b6" target="_blank">https://note.com/wise_mimosa4973/n/n3017ce5257b6</a></div>
+      <div class="small">Channel: https://note.com/wise_mimosa4973/message</div>
+      <div class="small">Expected: ¥50000 / Notes: MT5無料EA記事</div>
+      <textarea id="msg5" rows="14">FXアルゴ研究所様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg5')">文面コピー</button>
+        <a class="button" href="https://note.com/wise_mimosa4973/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('5')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="6">
+      <div class="meta"><b>6. たこやきEA note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/takoyaki_ea/n/ne4af5f6ca6af" target="_blank">https://note.com/takoyaki_ea/n/ne4af5f6ca6af</a></div>
+      <div class="small">Channel: https://note.com/takoyaki_ea/message</div>
+      <div class="small">Expected: ¥50000 / Notes: EA検証系</div>
+      <textarea id="msg6" rows="14">たこやきEA note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg6')">文面コピー</button>
+        <a class="button" href="https://note.com/takoyaki_ea/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('6')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="7">
+      <div class="meta"><b>7. ホソノP note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/hosono_p/n/na26ff8d09aae" target="_blank">https://note.com/hosono_p/n/na26ff8d09aae</a></div>
+      <div class="small">Channel: https://note.com/hosono_p/message</div>
+      <div class="small">Expected: ¥50000 / Notes: EA自作初心者層</div>
+      <textarea id="msg7" rows="14">ホソノP note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg7')">文面コピー</button>
+        <a class="button" href="https://note.com/hosono_p/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('7')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="8">
+      <div class="meta"><b>8. MQL Investment Lab</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://mqlinvestmentlab.com/" target="_blank">https://mqlinvestmentlab.com/</a></div>
+      <div class="small">Channel: https://mqlinvestmentlab.com/contact/ / narabayosi@yahoo.co.jp / https://twitter.com/mql5ssei</div>
+      <div class="small">Expected: ¥50000 / Notes: MQL5学習者</div>
+      <textarea id="msg8" rows="14">MQL Investment Lab様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg8')">文面コピー</button>
+        <a class="button" href="https://mqlinvestmentlab.com/contact/" target="_blank">送信先を開く</a>
+        <button onclick="markDone('8')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="9">
+      <div class="meta"><b>9. FX Trade</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://fx-tradesite.com/mql5-macross-ea-9311" target="_blank">https://fx-tradesite.com/mql5-macross-ea-9311</a></div>
+      <div class="small">Channel: https://fx-tradesite.com/form</div>
+      <div class="small">Expected: ¥50000 / Notes: MQL5サンプル記事</div>
+      <textarea id="msg9" rows="14">FX Trade様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg9')">文面コピー</button>
+        <a class="button" href="https://fx-tradesite.com/form" target="_blank">送信先を開く</a>
+        <button onclick="markDone('9')">送信済みメモ</button>
+      </div>
+    </section>
+    <section class="card" data-lead="10">
+      <div class="meta"><b>10. fx_ea_shingo note</b> <span class="pill">A</span></div>
+      <div class="small">Source: <a href="https://note.com/fx_ea_shingo/n/n94c184abf04f" target="_blank">https://note.com/fx_ea_shingo/n/n94c184abf04f</a></div>
+      <div class="small">Channel: https://note.com/fx_ea_shingo/message</div>
+      <div class="small">Expected: ¥50000 / Notes: EA初心者スタートガイド</div>
+      <textarea id="msg10" rows="14">fx_ea_shingo note様
+
+突然のご連絡失礼します。Jarvis Alpha Researchです。
+MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
+
+現在、初回の無料ミニ診断として、個人情報・口座番号・残高を削除したデータをもとに改善余地3点だけ返しています。
+
+無料診断フォーム:
+FORM_URL_PLACEHOLDER
+
+詳細LP:
+LP_URL_PLACEHOLDER
+
+※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。</textarea>
+      <div class="actions">
+        <button onclick="copyMsg('msg10')">文面コピー</button>
+        <a class="button" href="https://note.com/fx_ea_shingo/message" target="_blank">送信先を開く</a>
+        <button onclick="markDone('10')">送信済みメモ</button>
+      </div>
+    </section>
+</main>
+<script>
+const sent=[];
+function copyMsg(id){navigator.clipboard.writeText(document.getElementById(id).value);}
+function markDone(id){if(!sent.includes(id)) sent.push(id); alert(id+' を送信済みメモに追加');}
+function replaceUrls(){
+  const lp=document.getElementById('lp').value.trim();
+  const form=document.getElementById('form').value.trim();
+  document.querySelectorAll('textarea').forEach(t=>{
+    if(lp) t.value=t.value.replaceAll('LP_URL_PLACEHOLDER', lp);
+    if(form) t.value=t.value.replaceAll('FORM_URL_PLACEHOLDER', form);
+  });
+}
+function copyProgress(){
+  const txt='送信済みlead_id: '+sent.join(', ')+"
+送信日: "+new Date().toISOString().slice(0,10);
+  navigator.clipboard.writeText(txt); alert(txt);
+}
+</script>
+</body>
+</html>
