@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sumikazuhiko.github.io/jarvis-alpha-research-site/sitemap.xml
