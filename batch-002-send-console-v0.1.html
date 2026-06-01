@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Batch 002 Send Console | Jarvis Alpha Research</title>
-<meta name="description" content="Jarvis Alpha Researchの未接触10件を、ユーザーの最終クリックだけで送れる状態にする手動送信コンソール。">
+<meta name="description" content="500文字以内の短文で未接触10件を、ユーザーの最終クリックだけで送れる状態にする手動送信コンソール。">
 <link rel="canonical" href="https://sumikazuhiko.github.io/jarvis-alpha-research-site/batch-002-send-console-v0.1.html">
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#08111f;color:#e8eef8;margin:0;line-height:1.6}.wrap{max-width:1100px;margin:0 auto;padding:28px 20px}a{color:#93c5fd}.warn{background:#33230a;border:1px solid #f59e0b;color:#fde68a;border-radius:12px;padding:12px;margin:12px 0}.card{background:#111b31;border:1px solid #26364f;border-radius:16px;padding:16px;margin:14px 0}h2{margin:0 0 6px}h2 span{font-size:12px;background:#2563eb;border-radius:999px;padding:3px 8px}.small{font-size:13px;color:#a8b3c7;word-break:break-all}textarea{width:100%;min-height:250px;box-sizing:border-box;background:#0f172a;color:#e5e7eb;border:1px solid #334155;border-radius:12px;padding:12px;line-height:1.55}button,.button{display:inline-block;background:#22c55e;color:#03120a;border:0;border-radius:12px;padding:10px 14px;font-weight:800;text-decoration:none;margin:8px 8px 0 0;cursor:pointer}.mail{background:#60a5fa}.cmd{background:#020617;border:1px solid #334155;border-radius:12px;padding:12px;white-space:pre-wrap;color:#e5e7eb}</style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#08111f;color:#e8eef8;margin:0;line-height:1.6}.wrap{max-width:1100px;margin:0 auto;padding:28px 20px}a{color:#93c5fd}.warn{background:#33230a;border:1px solid #f59e0b;color:#fde68a;border-radius:12px;padding:12px;margin:12px 0}.card{background:#111b31;border:1px solid #26364f;border-radius:16px;padding:16px;margin:14px 0}h2{margin:0 0 6px}h2 span{font-size:12px;background:#2563eb;border-radius:999px;padding:3px 8px}.small{font-size:13px;color:#a8b3c7;word-break:break-all}textarea{width:100%;min-height:210px;box-sizing:border-box;background:#0f172a;color:#e5e7eb;border:1px solid #334155;border-radius:12px;padding:12px;line-height:1.55}button,.button{display:inline-block;background:#22c55e;color:#03120a;border:0;border-radius:12px;padding:10px 14px;font-weight:800;text-decoration:none;margin:8px 8px 0 0;cursor:pointer}.mail{background:#60a5fa}.cmd{background:#020617;border:1px solid #334155;border-radius:12px;padding:12px;white-space:pre-wrap;color:#e5e7eb}</style>
 </head>
 <body><main class="wrap">
 <p><a href="./">← LPへ戻る</a></p>
 <h1>Batch 002 Send Console v0.1</h1>
-<div class="warn">このページは送信ボタンの直前まで準備します。実送信は和彦様のクリック/貼り付け操作でのみ行います。</div>
+<div class="warn">本文500文字制限対応済み。各文面は最大301文字です。実送信は和彦様のクリック/貼り付け操作でのみ行います。</div>
 <p>対象lead_id: 11,12,13,14,15,16,17,18,19,20</p>
 <div class="cmd" id="cmd">cd /home/kazuhiko/Vault/projects/ai-company
 python3 scripts/mark_manual_sends.py --ids 11,12,13,14,15,16,17,18,19,20 --channel manual-console</div>
@@ -20,31 +20,21 @@ python3 scripts/mark_manual_sends.py --ids 11,12,13,14,15,16,17,18,19,20 --chann
 
 <section class="card" data-id="11">
   <h2>1. HELIOS_Grid note <span>A</span></h2>
-  <p class="small">lead_id: 11 / value: ¥50000</p>
+  <p class="small">lead_id: 11 / value: ¥50000 / chars: 298</p>
   <p class="small">source: <a href="https://note.com/tyonan_seeeta/n/nf636147f441f" target="_blank">https://note.com/tyonan_seeeta/n/nf636147f441f</a></p>
   <p class="small">channel: https://note.com/tyonan_seeeta/message</p>
   <textarea id="m1">HELIOS_Grid note様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-ゴールドEA の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m1')">文面コピー</button>
     <a class="button" href="https://note.com/tyonan_seeeta/message" target="_blank">送信先を開く</a>
@@ -54,31 +44,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="12">
   <h2>2. moonlit_garden note <span>B</span></h2>
-  <p class="small">lead_id: 12 / value: ¥50000</p>
+  <p class="small">lead_id: 12 / value: ¥50000 / chars: 301</p>
   <p class="small">source: <a href="https://note.com/moonlit_garden/n/na626d21a15de" target="_blank">https://note.com/moonlit_garden/n/na626d21a15de</a></p>
   <p class="small">channel: https://note.com/moonlit_garden/message</p>
   <textarea id="m2">moonlit_garden note様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-無料EAまとめ の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m2')">文面コピー</button>
     <a class="button" href="https://note.com/moonlit_garden/message" target="_blank">送信先を開く</a>
@@ -88,31 +68,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="13">
   <h2>3. sys-tre <span>B</span></h2>
-  <p class="small">lead_id: 13 / value: ¥50000</p>
+  <p class="small">lead_id: 13 / value: ¥50000 / chars: 289</p>
   <p class="small">source: <a href="https://sys-tre.com/forexguide/mt5/" target="_blank">https://sys-tre.com/forexguide/mt5/</a></p>
   <p class="small">channel: https://sys-tre.com/contact-us/ / https://twitter.com/systre_COM</p>
   <textarea id="m3">sys-tre様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-MT5設定ガイド の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m3')">文面コピー</button>
     <a class="button" href="https://sys-tre.com/contact-us/" target="_blank">送信先を開く</a>
@@ -122,31 +92,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="14">
   <h2>4. EA-BANK <span>B</span></h2>
-  <p class="small">lead_id: 14 / value: ¥50000</p>
+  <p class="small">lead_id: 14 / value: ¥50000 / chars: 289</p>
   <p class="small">source: <a href="https://ea-bank.com/shanben1212/mt5-ea-auto-trade-setup/" target="_blank">https://ea-bank.com/shanben1212/mt5-ea-auto-trade-setup/</a></p>
   <p class="small">channel: https://ea-bank.com/contact/</p>
   <textarea id="m4">EA-BANK様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-EA運用者メディア の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m4')">文面コピー</button>
     <a class="button" href="https://ea-bank.com/contact/" target="_blank">送信先を開く</a>
@@ -156,31 +116,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="15">
   <h2>5. ロジツク公式 <span>B</span></h2>
-  <p class="small">lead_id: 15 / value: ¥150000</p>
+  <p class="small">lead_id: 15 / value: ¥150000 / chars: 288</p>
   <p class="small">source: <a href="https://logi-tsuku.com/autotrade-ea-common-mt5-brrnvkbtpwhf/" target="_blank">https://logi-tsuku.com/autotrade-ea-common-mt5-brrnvkbtpwhf/</a></p>
   <p class="small">channel: https://logi-tsuku.com/contact/</p>
   <textarea id="m5">ロジツク公式様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-ツール利用者 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m5')">文面コピー</button>
     <a class="button" href="https://logi-tsuku.com/contact/" target="_blank">送信先を開く</a>
@@ -190,65 +140,45 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="16">
   <h2>6. Cashback Island <span>B</span></h2>
-  <p class="small">lead_id: 16 / value: ¥50000</p>
+  <p class="small">lead_id: 16 / value: ¥50000 / chars: 297</p>
   <p class="small">source: <a href="https://www.cashbackisl.com/jp/mt5-auto-trade-ea-guide/" target="_blank">https://www.cashbackisl.com/jp/mt5-auto-trade-ea-guide/</a></p>
   <p class="small">channel: 問い合わせ / cs@cashbackisland.com</p>
   <textarea id="m6">Cashback Island様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-自動売買導入層 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m6')">文面コピー</button>
     
-    <a class="button mail" href="mailto:cs@cashbackisland.com?subject=MT5%20EA%20AI%E8%A8%BA%E6%96%AD%E3%81%AE%E7%84%A1%E6%96%99%E3%83%9F%E3%83%8B%E8%A8%BA%E6%96%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=Cashback%20Island%E6%A7%98%0A%0A%E7%AA%81%E7%84%B6%E3%81%AE%E3%81%94%E9%80%A3%E7%B5%A1%E5%A4%B1%E7%A4%BC%E3%81%97%E3%81%BE%E3%81%99%E3%80%82Jarvis%20Alpha%20Research%E3%81%A7%E3%81%99%E3%80%82%0A%0AMT5/EA%E9%81%8B%E7%94%A8%E8%80%85%E5%90%91%E3%81%91%E3%81%AB%E3%80%81%E5%8F%96%E5%BC%95%E5%B1%A5%E6%AD%B4%E3%83%BB%E3%83%90%E3%83%83%E3%82%AF%E3%83%86%E3%82%B9%E3%83%88%E3%81%8B%E3%82%89%E3%80%8C%E8%B2%A0%E3%81%91%E6%96%B9%E3%81%AE%E6%A7%8B%E9%80%A0%E3%80%8D%E3%80%8C%E5%81%9C%E6%AD%A2%E5%80%99%E8%A3%9C%E3%80%8D%E3%80%8C%E6%94%B9%E5%96%84%E4%BD%99%E5%9C%B03%E7%82%B9%E3%80%8D%E3%82%92AI/Python%E3%81%A7%E8%A8%BA%E6%96%AD%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%0A%0A%E8%87%AA%E5%8B%95%E5%A3%B2%E8%B2%B7%E5%B0%8E%E5%85%A5%E5%B1%A4%20%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E6%8B%9D%E8%A6%8B%E3%81%97%E3%80%81EA%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B%E5%89%8D%E3%81%AB%E3%80%81%E4%BB%8A%E3%81%AE%E9%81%8B%E7%94%A8%E5%B1%A5%E6%AD%B4%E3%81%8B%E3%82%89%E4%BB%A5%E4%B8%8B%E3%81%A0%E3%81%91%E3%81%A7%E3%82%82%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E3%81%A8%E6%94%B9%E5%96%84%E4%BD%99%E5%9C%B0%E3%81%8C%E8%A6%8B%E3%81%88%E3%82%84%E3%81%99%E3%81%84%E3%81%A8%E8%80%83%E3%81%88%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0A%0A-%20%E9%80%9A%E8%B2%A8%E3%83%9A%E3%82%A2%E5%88%A5%E3%81%AB%E3%81%A9%E3%81%93%E3%81%A7%E5%B4%A9%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%0A-%20%E6%99%82%E9%96%93%E5%B8%AF%E5%88%A5%E3%81%AB%E6%90%8D%E5%A4%B1%E3%81%8C%E5%81%8F%E3%81%A3%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%81%8B%0A-%20Magic%20Number/EA%E5%88%A5%E3%81%AB%E6%AD%A2%E3%82%81%E3%82%8B%E5%80%99%E8%A3%9C%E3%81%8C%E3%81%AA%E3%81%84%E3%81%8B%0A%0A%E7%84%A1%E6%96%99%E3%83%9F%E3%83%8B%E8%A8%BA%E6%96%AD%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89%E3%81%A7%E3%81%99%E3%80%82%0Ahttps%3A//sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html%0A%0A%E8%A9%B3%E7%B4%B0%3A%0Ahttps%3A//sumikazuhiko.github.io/jarvis-alpha-research-site/%0A%0A%E3%83%87%E3%83%BC%E3%82%BF%E5%85%B1%E6%9C%89%E6%99%82%E3%81%AE%E6%B3%A8%E6%84%8F%3A%0Ahttps%3A//sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html%0A%0A%E2%80%BB%E5%88%A9%E7%9B%8A%E4%BF%9D%E8%A8%BC%E3%83%BB%E6%8A%95%E8%B3%87%E5%8A%A9%E8%A8%80%E3%83%BB%E5%A3%B2%E8%B2%B7%E6%8C%87%E7%A4%BA%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%8F%E3%80%81EA%E9%81%8B%E7%94%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%88%86%E6%9E%90%E6%94%AF%E6%8F%B4%E3%81%A7%E3%81%99%E3%80%82%E4%B8%8D%E8%A6%81%E3%81%A7%E3%81%97%E3%81%9F%E3%82%89%E8%BF%94%E4%BF%A1%E4%B8%8D%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82">メール作成を開く</a>
+    <a class="button mail" href="mailto:cs@cashbackisland.com?subject=MT5%20EA%20AI%E8%A8%BA%E6%96%AD%E3%81%AE%E7%84%A1%E6%96%99%E3%83%9F%E3%83%8B%E8%A8%BA%E6%96%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=Cashback%20Island%E6%A7%98%0A%0A%E7%AA%81%E7%84%B6%E5%A4%B1%E7%A4%BC%E3%81%97%E3%81%BE%E3%81%99%E3%80%82Jarvis%20Alpha%20Research%E3%81%A7%E3%81%99%E3%80%82%0AMT5/EA%E3%81%AE%E5%B1%A5%E6%AD%B4%E3%81%8B%E3%82%89%E3%80%8C%E3%81%A9%E3%81%AE%E9%80%9A%E8%B2%A8%E3%83%9A%E3%82%A2%E3%83%BB%E6%99%82%E9%96%93%E5%B8%AF%E3%83%BBMagic%E3%81%A7%E8%B2%A0%E3%81%91%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%E3%80%8D%E3%82%92AI/Python%E3%81%A7%E8%A8%BA%E6%96%AD%E3%81%97%E3%80%81%E7%84%A1%E6%96%99%E3%81%A7%E6%94%B9%E5%96%84%E4%BD%99%E5%9C%B03%E7%82%B9%E3%81%A0%E3%81%91%E8%BF%94%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%0A%0A%E7%94%B3%E8%BE%BC%3A%0Ahttps%3A//sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html%0A%0A%E8%A9%B3%E7%B4%B0%3A%0Ahttps%3A//sumikazuhiko.github.io/jarvis-alpha-research-site/%0A%0A%E2%80%BB%E5%88%A9%E7%9B%8A%E4%BF%9D%E8%A8%BC%E3%83%BB%E6%8A%95%E8%B3%87%E5%8A%A9%E8%A8%80%E3%83%BB%E5%A3%B2%E8%B2%B7%E6%8C%87%E7%A4%BA%E3%81%A7%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%E4%B8%8D%E8%A6%81%E3%81%A7%E3%81%97%E3%81%9F%E3%82%89%E8%BF%94%E4%BF%A1%E4%B8%8D%E8%A6%81%E3%81%A7%E3%81%99%E3%80%82">メール作成を開く</a>
     <button onclick="mark('16')">送信したlead_idに追加</button>
   </div>
 </section>
 <section class="card" data-id="17">
   <h2>7. はなまるFX note <span>B</span></h2>
-  <p class="small">lead_id: 17 / value: ¥50000</p>
+  <p class="small">lead_id: 17 / value: ¥50000 / chars: 293</p>
   <p class="small">source: <a href="https://note.com/misa_matsuzawa/n/ne7cfd898a260" target="_blank">https://note.com/misa_matsuzawa/n/ne7cfd898a260</a></p>
   <p class="small">channel: https://note.com/misa_matsuzawa/message</p>
   <textarea id="m7">はなまるFX note様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-無料EA運用者層 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m7')">文面コピー</button>
     <a class="button" href="https://note.com/misa_matsuzawa/message" target="_blank">送信先を開く</a>
@@ -258,31 +188,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="18">
   <h2>8. noalab <span>B</span></h2>
-  <p class="small">lead_id: 18 / value: ¥50000</p>
+  <p class="small">lead_id: 18 / value: ¥50000 / chars: 288</p>
   <p class="small">source: <a href="https://noalab.jp/mt5-ea-setup-guide/" target="_blank">https://noalab.jp/mt5-ea-setup-guide/</a></p>
   <p class="small">channel: https://noalab.jp/profile/</p>
   <textarea id="m8">noalab様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-プロフィール経由 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m8')">文面コピー</button>
     <a class="button" href="https://noalab.jp/profile/" target="_blank">送信先を開く</a>
@@ -292,31 +212,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="19">
   <h2>9. fxantenna <span>B</span></h2>
-  <p class="small">lead_id: 19 / value: ¥50000</p>
+  <p class="small">lead_id: 19 / value: ¥50000 / chars: 291</p>
   <p class="small">source: <a href="https://fxantenna.com/mt4-mt5-ea-present/" target="_blank">https://fxantenna.com/mt4-mt5-ea-present/</a></p>
   <p class="small">channel: サイト内問い合わせ要確認</p>
   <textarea id="m9">fxantenna様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-要連絡先確認 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m9')">文面コピー</button>
     
@@ -326,31 +236,21 @@ https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
 </section>
 <section class="card" data-id="20">
   <h2>10. サムライトレード <span>B</span></h2>
-  <p class="small">lead_id: 20 / value: ¥150000</p>
+  <p class="small">lead_id: 20 / value: ¥150000 / chars: 290</p>
   <p class="small">source: <a href="https://bo-eleven.penne.jp/freeea/" target="_blank">https://bo-eleven.penne.jp/freeea/</a></p>
   <p class="small">channel: サイト内問い合わせ要確認</p>
   <textarea id="m10">サムライトレード様
 
-突然のご連絡失礼します。Jarvis Alpha Researchです。
+突然失礼します。Jarvis Alpha Researchです。
+MT5/EAの履歴から「どの通貨ペア・時間帯・Magicで負けているか」をAI/Pythonで診断し、無料で改善余地3点だけ返しています。
 
-MT5/EA運用者向けに、取引履歴・バックテストから「負け方の構造」「停止候補」「改善余地3点」をAI/Pythonで診断しています。
-
-要連絡先確認 の内容を拝見し、EAを追加する前に、今の運用履歴から以下だけでも確認すると改善余地が見えやすいと考えました。
-
-- 通貨ペア別にどこで崩れているか
-- 時間帯別に損失が偏っていないか
-- Magic Number/EA別に止める候補がないか
-
-無料ミニ診断はこちらです。
+申込:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
 
 詳細:
 https://sumikazuhiko.github.io/jarvis-alpha-research-site/
 
-データ共有時の注意:
-https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
-
-※利益保証・投資助言・売買指示ではなく、EA運用データの分析支援です。不要でしたら返信不要です。</textarea>
+※利益保証・投資助言・売買指示ではありません。不要でしたら返信不要です。</textarea>
   <div class="actions">
     <button onclick="copyText('m10')">文面コピー</button>
     
