@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Follow-up Console | Jarvis Alpha Research</title>
+  <meta name="description" content="Jarvis Alpha Researchの手動フォローアップ文面コピー用コンソール。3日後、7日後、返信後の文面を即コピーできます。">
+  <link rel="canonical" href="https://sumikazuhiko.github.io/jarvis-alpha-research-site/follow-up-console-v0.1.html">
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#08111f;color:#e8eef8;margin:0;line-height:1.65}.wrap{max-width:980px;margin:0 auto;padding:32px 20px}a{color:#93c5fd}.grid{display:grid;grid-template-columns:1fr;gap:16px}.card{background:#111b31;border:1px solid #26364f;border-radius:16px;padding:18px}textarea{width:100%;min-height:220px;box-sizing:border-box;background:#0f172a;color:#e5e7eb;border:1px solid #334155;border-radius:12px;padding:12px;line-height:1.55}input{background:#0f172a;color:#e5e7eb;border:1px solid #334155;border-radius:10px;padding:10px;min-width:280px}.btn,button{display:inline-block;background:#22c55e;color:#03120a;border:0;border-radius:12px;padding:10px 14px;font-weight:800;text-decoration:none;margin-top:8px;cursor:pointer}.muted{color:#a8b3c7;font-size:14px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}</style>
+</head>
+<body><main class="wrap">
+  <p><a href="./">← LPへ戻る</a></p>
+  <h1>Follow-up Console v0.1</h1>
+  <p class="muted">初回送信後の3日後・7日後・返信後フォロー文面をコピーするためのページです。送信は自動実行しません。</p>
+  <div class="tools"><input id="name" placeholder="相手名 / ハンドルネーム"><button onclick="fillName()">名前を反映</button></div>
+  <section class="grid">
+    <div class="card"><h2>3日後フォロー</h2><textarea id="t3">{名前}様
+
+先日お送りしたMT5 EA AI診断の件、念のため再送です。
+
+EAを増やす前に、今の履歴から
+- どの通貨ペアで崩れているか
+- どの時間帯に損失が偏るか
+- どのMagic/EAを止める候補にすべきか
+だけでも確認できます。
+
+無料ミニ診断はこちらです。
+https://sumikazuhiko.github.io/jarvis-alpha-research-site/intake.html
+
+不要でしたら返信不要です。
+※利益保証・投資助言ではなく、EA運用データの分析支援です。</textarea><button onclick="copy('t3')">コピー</button></div>
+    <div class="card"><h2>7日後ラストフォロー</h2><textarea id="t7">{名前}様
+
+MT5 EA AI診断の件、最後に一度だけご連絡します。
+
+無料診断では、データを送っていただければ「改善余地3点」だけ返します。
+EAファイルや口座情報は不要です。
+
+データ共有時の注意点はこちらです。
+https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html
+
+必要になったタイミングでどうぞ。
+https://sumikazuhiko.github.io/jarvis-alpha-research-site/</textarea><button onclick="copy('t7')">コピー</button></div>
+    <div class="card"><h2>返信が来た時</h2><textarea id="tr">{名前}様
+
+ありがとうございます。
+まず無料診断として、以下3点を確認します。
+
+1. 損失が集中していそうな箇所
+2. 追加で必要なデータ
+3. 有料診断に進む価値があるか
+
+口座番号・個人情報・残高は削除したうえで、共有可能な履歴/バックテスト/集計を送ってください。
+データ共有ガイド:
+https://sumikazuhiko.github.io/jarvis-alpha-research-site/data-guide.html</textarea><button onclick="copy('tr')">コピー</button></div>
+  </section>
+</main><script>
+function copy(id){navigator.clipboard.writeText(document.getElementById(id).value);}
+function fillName(){const n=document.getElementById('name').value.trim()||'{名前}';document.querySelectorAll('textarea').forEach(t=>t.value=t.value.replaceAll('{名前}',n));}
+</script></body></html>
